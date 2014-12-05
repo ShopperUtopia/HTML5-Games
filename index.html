@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="libraries/simpleGame.js"></script>
+<script type="text/javascript">
+	var scene;
+	var ball;
+	
+	function init() {
+		scene = new Scene();
+		ball = new Sprite(scene,"images/ball.png",50,50);	
+		
+		ball.setMoveAngle(45);
+		ball.setSpeed(3);
+		scene.start();
+	} // end init
+	
+	function update(){
+		scene.clear();
+		ball.update();
+	} // end update
+	
+</script>
+</head>
+
+<body onLoad="init()">
+</body>
+</html>
